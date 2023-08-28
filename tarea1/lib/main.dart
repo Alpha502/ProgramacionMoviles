@@ -78,27 +78,44 @@ class _MyHomePageState extends State<MyHomePage>{
                       children: [
                         Expanded(child: IconButton(style: IconButton.styleFrom(foregroundColor: boton1?Colors.black:Colors.indigo),
                           onPressed: (){
-                          setState(() {
-                            boton1 = !boton1;
-                          });
+                            const snackBar = SnackBar(
+                              content:  Text('Botonsito de persona')
+                            );
+                            setState(() {
+                              boton1 = !boton1;
+                            });
+                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }, icon: const Icon(Icons.man_3)),),
                         Expanded(child: IconButton(style: IconButton.styleFrom(foregroundColor: boton2?Colors.black:Colors.indigo),
                           onPressed: (){
-                          setState(() {
-                            boton2 = !boton2;
-                          });
+                            const snackBar = SnackBar(
+                              content:  Text('Botonsito de reloj')
+                            );
+                            setState(() {
+                              boton2 = !boton2;
+                            });
+                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }, icon: const Icon(Icons.timer))),
                         Expanded(child: IconButton(style: IconButton.styleFrom(foregroundColor: boton3?Colors.black:Colors.indigo),
                           onPressed: (){
-                          setState(() {
-                            boton3 = !boton3;
-                          });
+                            const snackBar = SnackBar(
+                              content:  Text('Botonsito de celular')
+                            );
+                            setState(() {
+                              boton3 = !boton3;
+                            });
+                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }, icon: const Icon(Icons.phone_android_outlined))),
                         Expanded(child: IconButton(style: IconButton.styleFrom(foregroundColor: boton4?Colors.black:Colors.indigo),
                           onPressed: (){
-                          setState(() {
-                            boton4 = !boton4;
+                            const snackBar = SnackBar(
+                              content:  Text('Botonsito de celular')
+                            );
+                            setState(() {
+                              boton4 = !boton4;
+                              ScaffoldMessenger.of(context).showSnackBar(snackBar);
                           });
+                          
                         }, icon: const Icon(Icons.phone_android_outlined))),
                       ],
                     )
